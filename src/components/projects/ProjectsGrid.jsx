@@ -33,9 +33,10 @@ const ProjectsGrid = () => {
                         mb-3
                         "
 				>
-					Search projects by title or filter by category
+					Coming soon
+					           {/*Search projects by title or filter by category*/}
 				</h3>
-				<div
+			{/* 	<div
 					className="
                         flex
                         justify-between
@@ -119,7 +120,7 @@ const ProjectsGrid = () => {
 								image={project.img}
 								key={project.id}
 							/>
-					  ))}
+					  ))}*/}
 			</div>
 		</section>
 	);
