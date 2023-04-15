@@ -3,11 +3,24 @@ import AppBanner from '../components/shared/AppBanner';
 import ProjectsGrid from '../components/projects/ProjectsGrid';
 import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
+import AboutMeBio from '../components/about/AboutMeBio';
+import { AboutMeProvider } from '../context/AboutMeContext';
+import { motion } from 'framer-motion';
 
 const Home = () => {
 	return (
 		<div className="container mx-auto">
 			<AppBanner></AppBanner>
+			<AboutMeProvider>
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1, delay: 1 }}
+				exit={{ opacity: 0 }}
+				className="container mx-auto"
+			>
+				<AboutMeBio />
+			</motion.div>
+		</AboutMeProvider>
 
 			<ProjectsProvider>
 				<ProjectsGrid></ProjectsGrid>
