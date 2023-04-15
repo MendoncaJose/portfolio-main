@@ -4,19 +4,11 @@ function AppFooterCopyright() {
 			<div className="text-lg text-ternary-dark dark:text-ternary-light">
 				&copy; {new Date().getFullYear()}
 				<a
-					href="https://github.com/realstoman/react-tailwindcss-portfolio"
-					target="__blank"
-					className="hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
-				>
-					React & Tailwind CSS Portfolio
-				</a>
-				.
-				<a
-					href="https://stoman.me"
+					href="https://www.linkedin.com/in/jos%C3%A9-mendon%C3%A7a-b8a761188/"
 					target="__blank"
 					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
 				>
-					Stoman
+					José Mendonça
 				</a>
 			</div>
 		</div>
