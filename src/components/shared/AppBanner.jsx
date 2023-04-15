@@ -1,11 +1,12 @@
-import useThemeSwitcher from '../../hooks/useThemeSwitcher';
+import profileImage from '../../images/aboutMe.png';
 import { FiArrowDownCircle } from 'react-icons/fi';
-import developerLight from '../../images/developer.svg';
-import developerDark from '../../images/developer-dark.svg';
+import AboutMeBio from '../about/AboutMeBio';
+import { AboutMeProvider } from '../../context/AboutMeContext';
 import { motion } from 'framer-motion';
+import '../../css/home.css';
 
 const AppBanner = () => {
-	const [activeTheme] = useThemeSwitcher();
+	
 
 	return (
 		<motion.section
@@ -14,7 +15,8 @@ const AppBanner = () => {
 			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 			className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2"
 		>
-			<div className="w-full md:w-1/3 text-left">
+			
+			<div id="pro" className="w-full md:w-1/3 text-left">
 				<motion.h1
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -25,8 +27,12 @@ const AppBanner = () => {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
+
+				<img src={profileImage} className="rounded-lg w-96"  alt="" />
 					Hi, I'm José Mendonça
+
 				</motion.h1>
+				
 				<motion.p
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -37,7 +43,7 @@ const AppBanner = () => {
 					}}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					A JFull-Stack Developer & Front-End Enthusiast
+					A Full-Stack Developer & Front-End Enthusiast
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}
@@ -62,19 +68,29 @@ const AppBanner = () => {
 					</a>
 				</motion.div>
 			</div>
+
+			
 			<motion.div
 				initial={{ opacity: 0, y: -180 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
 			>
-				<img
-					src={
-						activeTheme === 'dark' ? developerLight : developerDark
-					}
-					alt="Developer"
-				/>
+
+				
+				<AboutMeProvider>
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1, delay: 1 }}
+				exit={{ opacity: 0 }}
+				className="container mx-auto"
+			>
+				<AboutMeBio />
 			</motion.div>
+		</AboutMeProvider>
+				
+			</motion.div>
+
 		</motion.section>
 	);
 };
