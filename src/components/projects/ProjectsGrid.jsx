@@ -1,19 +1,19 @@
-import { useContext } from 'react';
-import { FiSearch } from 'react-icons/fi';
-import ProjectSingle from './ProjectSingle';
-import { ProjectsContext } from '../../context/ProjectsContext';
-import ProjectsFilter from './ProjectsFilter';
+//import { useContext } from 'react';
+//import { FiSearch } from 'react-icons/fi';
+//import ProjectSingle from './ProjectSingle';
+//import { ProjectsContext } from '../../context/ProjectsContext';
+//import ProjectsFilter from './ProjectsFilter';
 
 const ProjectsGrid = () => {
-	const {
-		projects,
-		searchProject,
-		setSearchProject,
-		searchProjectsByTitle,
-		selectProject,
-		setSelectProject,
-		selectProjectsByCategory,
-	} = useContext(ProjectsContext);
+	//const {
+		//projects,
+		//searchProject,
+		//setSearchProject,
+		//searchProjectsByTitle,
+		//selectProject,
+		//setSelectProject,
+		//selectProjectsByCategory,
+	//} = useContext(ProjectsContext);
 
 	return (
 		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
