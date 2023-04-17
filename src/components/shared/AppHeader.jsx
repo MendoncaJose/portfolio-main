@@ -1,5 +1,5 @@
 
-import {  FiMoon, FiSun, FiX } from 'react-icons/fi';
+import {  FiMoon, FiSun } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import logoLight from '../../images/logo1.png';
@@ -57,23 +57,9 @@ const AppHeader = () => {
 					
 				</div>
 
-				{/* Header links small screen */}
-				<div
-					className={
-						showMenu
-							? 'block m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none'
-							: 'hidden'
-					}
-				>
 				
-				</div>
 
-				{/* Header links large screen */}
-				<div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
-					
-				
-					
-				</div>
+			
 
 				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
