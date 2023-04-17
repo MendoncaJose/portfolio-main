@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
+
+import {  FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import logoLight from '../../images/logo1.png';
@@ -7,16 +7,9 @@ import logoDark from '../../images/logo1.png';
 import { motion } from 'framer-motion';
 
 const AppHeader = () => {
-	const [showMenu, setShowMenu] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
 
-	function toggleMenu() {
-		if (!showMenu) {
-			setShowMenu(true);
-		} else {
-			setShowMenu(false);
-		}
-	}
+	
 
 
 
