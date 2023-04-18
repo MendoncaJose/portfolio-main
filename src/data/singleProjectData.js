@@ -1,39 +1,32 @@
 // Import images
-import Image1 from '../images/ui-project-1.jpg';
-import Image2 from '../images/web-project-2.jpg';
-import Image3 from '../images/mobile-project-2.jpg';
-import Image4 from '../images/mobile-project-1.jpg';
-import Image5 from '../images/web-project-1.jpg';
-import Image6 from '../images/ui-project-2.jpg';
+import Image3 from '../images/optivini.png';
+import Image2 from '../images/optivini1.png';
+import Image1 from '../images/optivini2.png';
 // Import icons
 import {
-	FiFacebook,
-	FiInstagram,
-	FiLinkedin,
-	FiTwitter,
-	FiYoutube,
+	FiGithub,
 } from 'react-icons/fi';
 
 export const singleProjectData = {
 	ProjectHeader: {
-		title: 'Project Management UI',
-		publishDate: 'Jul 26, 2021',
-		tags: 'UI / Frontend',
+		title: 'Software Development Project',
+		publishDate: 'Sep 26, 2022 - Current',
+		tags: 'Full-Stack',
 	},
 	ProjectImages: [
 		{
 			id: 1,
-			title: 'Kabul Project Management UI',
+			title: 'Website',
 			img: Image1,
 		},
 		{
 			id: 2,
-			title: 'Kabul Project Management UI',
+			title: 'Leafleat API',
 			img: Image2,
 		},
 		{
 			id: 3,
-			title: 'Kabul Project Management UI',
+			title: 'Dashboard',
 			img: Image3,
 		},
 	],
@@ -43,27 +36,22 @@ export const singleProjectData = {
 			{
 				id: 1,
 				title: 'Name',
-				details: 'Company Ltd',
+				details: 'OptiVini',
 			},
 			{
 				id: 2,
 				title: 'Services',
-				details: 'UI Design & Frontend Development',
+				details: 'Full-Stack Development',
 			},
 			{
 				id: 3,
 				title: 'Website',
-				details: 'https://company.com',
-			},
-			{
-				id: 4,
-				title: 'Phone',
-				details: '555 8888 888',
+				details: 'https://optivini.netlify.app',
 			},
 		],
 		ObjectivesHeading: 'Objective',
 		ObjectivesDetails:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+			'Optivini is a winemaking process management software. This software allows the user to manage all stages of the wine production process, from grape quality control to bottling. Optivini allows the user to register vineyards, plots, grape varieties, and all the resources involved in wine production, whether human, material, or natural. The user can view satellite maps of the vineyards, with their respective plots and all their information. It is possible to register and schedule all types of interventions in the vineyards (maintenance, treatment, harvesting), as well as assign staff to tasks, optimizing the use of available human resources.',
 		Technologies: [
 			{
 				title: 'Tools & Technologies',
@@ -71,9 +59,10 @@ export const singleProjectData = {
 					'HTML',
 					'CSS',
 					'JavaScript',
-					'Vue.js',
-					'TailwindCSS',
-					'AdobeXD',
+					'Bootstrap',
+					'PHP',
+					'LeaFleat API',
+					'Weatherbit API'
 				],
 			},
 		],
@@ -82,81 +71,38 @@ export const singleProjectData = {
 			{
 				id: 1,
 				details:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+					'Competition is ruthless. Producers are excellent, wines are extraordinary, and the same can be said about the infrastructure. However, according to our perception, there is still a lot of room for improvement in terms of organization. It is with a view to combating this "gap" that our solution "OPTIVINI" emerges, which aims to digitize and optimize the wine production process.',
 			},
 			{
 				id: 2,
 				details:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+					'OPTIVINI is a winemaking process management software for both small and medium-sized producers/bottlers and large companies in the sector. This application was designed to provide support in various areas: economic, technical, and administrative management of the vineyard and the winery.',
 			},
 			{
 				id: 3,
 				details:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+					"This solution aims to cover the entire wine-making process from when the vine leaves the nursery to the consumer's glass.",
 			},
 			{
 				id: 4,
 				details:
-					'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+					'Last but not least is data collection. Collecting and analyzing data enables the producer to predict yields, potential surpluses or shortfalls, and accordingly forecast costs and revenues.In short, the more efficient the entire production process, the better the profitability. At the same time, controlling production allows the customer to focus on promoting and selling wines.',
 			},
 		],
 		SocialSharingHeading: 'Share This',
 		SocialSharing: [
 			{
 				id: 1,
-				name: 'Twitter',
-				icon: <FiTwitter />,
-				url: 'https://twitter.com/realstoman',
-			},
-			{
-				id: 2,
-				name: 'Instagram',
-				icon: <FiInstagram />,
-				url: 'https://instagram.com/realstoman',
-			},
-			{
-				id: 3,
-				name: 'Facebook',
-				icon: <FiFacebook />,
-				url: 'https://facebook.com/',
-			},
-			{
-				id: 4,
-				name: 'LinkedIn',
-				icon: <FiLinkedin />,
-				url: 'https://linkedin.com/',
-			},
-			{
-				id: 5,
-				name: 'Youtube',
-				icon: <FiYoutube />,
-				url: 'https://www.youtube.com/c/StomanStudio',
+				name: 'GitHub',
+				icon: <FiGithub />,
+				url: 'https://github.com/MendoncaJose/OptiVini',
 			},
 		],
 	},
 	RelatedProject: {
-		title: 'Related Projects',
 		Projects: [
-			{
-				id: 1,
-				title: 'Mobile UI',
-				img: Image4,
-			},
-			{
-				id: 2,
-				title: 'Web Application',
-				img: Image5,
-			},
-			{
-				id: 3,
-				title: 'UI Design',
-				img: Image6,
-			},
-			{
-				id: 4,
-				title: 'Kabul Mobile App UI',
-				img: Image3,
-			},
+			
+			
 		],
 	},
 };

@@ -1,19 +1,17 @@
-//import { useContext } from 'react';
-//import { FiSearch } from 'react-icons/fi';
-//import ProjectSingle from './ProjectSingle';
-//import { ProjectsContext } from '../../context/ProjectsContext';
-//import ProjectsFilter from './ProjectsFilter';
+import { useContext } from 'react';
+import { FiSearch } from 'react-icons/fi';
+import ProjectSingle from './ProjectSingle';
+import { ProjectsContext } from '../../context/ProjectsContext';
 
 const ProjectsGrid = () => {
-	//const {
-		//projects,
-		//searchProject,
-		//setSearchProject,
-		//searchProjectsByTitle,
-		//selectProject,
-		//setSelectProject,
-		//selectProjectsByCategory,
-	//} = useContext(ProjectsContext);
+	const {
+		projects,
+		searchProject,
+		setSearchProject,
+		searchProjectsByTitle,
+		selectProject,
+		selectProjectsByCategory,
+	} = useContext(ProjectsContext);
 
 	return (
 		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
@@ -33,10 +31,10 @@ const ProjectsGrid = () => {
                         mb-3
                         "
 				>
-					Coming soon
+				
 					           {/*Search projects by title or filter by category*/}
 				</h3>
-			{/* 	<div
+				<div
 					className="
                         flex
                         justify-between
@@ -90,7 +88,7 @@ const ProjectsGrid = () => {
 						/>
 					</div>
 
-					<ProjectsFilter setSelectProject={setSelectProject} />
+				
 				</div>
 			</div>
 
@@ -120,7 +118,7 @@ const ProjectsGrid = () => {
 								image={project.img}
 								key={project.id}
 							/>
-					  ))}*/}
+					  ))}
 			</div>
 		</section>
 	);
