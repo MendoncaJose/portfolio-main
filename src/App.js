@@ -26,10 +26,6 @@ function App() {
 								path={"projects/optivini"}
 								element={<ProjectSingle />}
 							/>
-							<Route
-								path={"projects/optivini"}
-								element={<ProjectSingle />}
-							/>
 						</Routes>
 					</Suspense>
 					<AppFooter />
