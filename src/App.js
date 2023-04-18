@@ -23,7 +23,11 @@ function App() {
 						<Routes>
 							<Route path="/" element={<Home />} />
 							<Route
-								path={"projects/single-project"}
+								path={"projects/optivini"}
+								element={<ProjectSingle />}
+							/>
+							<Route
+								path={"projects/optivini"}
 								element={<ProjectSingle />}
 							/>
 						</Routes>
