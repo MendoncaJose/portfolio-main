@@ -68,7 +68,7 @@ const AppBanner = () => {
 			>
 
 	<div>
-      <audio autoplay="autoplay">
+      <audio autoPlay="autoplay">
         <source src={audio1} type="audio/mpeg" />
       </audio>
     </div>
